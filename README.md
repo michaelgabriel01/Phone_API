@@ -1,7 +1,7 @@
 Phone API
 =============
 
-Phone API challenge project
+Phone API project
 
 :License: MIT
 
