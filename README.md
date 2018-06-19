@@ -1,12 +1,7 @@
-work_at_olist
+Phone API
 =============
 
-Work_at_Olist challenge project
-
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-
+Phone API challenge project
 
 :License: MIT
 
@@ -14,7 +9,7 @@ Work_at_Olist challenge project
 Description
 -----------
 
-My solution for the OLIST challenge found at (https://github.com/olist/work-at-olist/blob/master/README.md). This application receives call detail records and calculates monthly bills for a given telephone number.
+This application receives call detail records and calculates monthly bills for a given telephone number.
 
 I'm gonna implement three (3) separated APIs To solve the problem and package them together
 ===========================================================================================
@@ -40,9 +35,9 @@ Settings
 Installation
 -----------
 First clone the project.
-Then, go ahead and use the following commands   # Must come back Michael to finish here
+Then, go ahead and use the following commands  
 ```console
-cd work-at-olist/
+cd Phone_API
 virtualenv env -p python3
 source env/bin/activate
 pip install -r requirements-dev.txt
@@ -117,11 +112,3 @@ The following details how to deploy this application.
 
 Heroku
 ^^^^^^
-
-See detailed `cookiecutter-django Heroku documentation`_.
-
-.. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
-
-
-
-
