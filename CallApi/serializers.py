@@ -28,15 +28,18 @@ class CallSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
 
+
 class BillSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
 
+
 class PriceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
+
 
 class AlbumSerializer(serializers.ModelSerializer):
     tracks = serializers.StringRelatedField(many=True)
@@ -45,6 +48,7 @@ class AlbumSerializer(serializers.ModelSerializer):
         model = Album
         fields = ('album_name', 'artist', 'tracks')
         # fields = ('url', 'username')
+        
 
 class PhoneSerializer(serializers.ModelSerializer):
     class Meta:
