@@ -18,12 +18,11 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 
-# class CallSerializer(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = models
-#         fields = ('record_type', 'record_timestamp', 'call_identifier', 'origin_phone_number', 'destination_phone_number')
+class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'username', 'first_name', 'last_name', 'email', 'groups')
 
-# https://www.youtube.com/watch?v=r9kT-jm136Q To watch later
 
 class CallSerializer(serializers.ModelSerializer):
     class Meta:
